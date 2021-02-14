@@ -1,12 +1,35 @@
-# Embedded Systems Projekt
-## Fractals und Langtons Ant
+# Embedded Systems Project
+## Fractals and Langtons Ant
 
-Ziel des Projekts war es ursprünglich Lnagtons Ant mithilfe des Displays(TI Educational Booster Pack MKII) darzustellen.
-Nach dem Anfang des Projekts entpuppte sich dies schwerer als gedacht. Für die Konfiguration TM4C1294NCPDT in Kombination mit dem Booster Pack war online keine library zu finden(die Verwendung von Energia war untersagt, da zu einfach).
-Mithilfe eines Oszilloskopes und vielen schlaflosen Nächten war es letztenendes möglich mithilfe von Schnippseln aus anderen Librarys das Display zum laufen zu kriegen. Während dieses Projektes habe ich viele Dinge über die Programmierung in C gelernt. Da die meisten anderen Libraries in C++ geschrieben waren oder Energia spezifische Funktionen verwendet haben musste ich diese in C nachprogrammieren. An einigen Stellen kam sogar Assemblersprache vor.
+### Assignment Specifications
 
-Da mir die ursprüngliche Aufgabe(Langtons Ant) am Ende zu eintönig erschien habe ich zusätzlich einen Fractal Modus und weitere Peripherien(Buzzer, Buttons, Joystick) zur Interaktion implementiert.
+It was our final assigment during our embedded systems course to program an application which utilizes several input/output modules of the Texas Instruments TM4C1294NCPDT board in combination with the TI Educational Booster Pack MKII.
 
-Weitere Details und eine Anleitung sind in der main.c angeführt
+The basic conditions given by our lecturer were simple:
+* make use of/implement several modules(buttons, LEDs, buzzer, ...)
+* DONT use Energia (since there are already a bunch of demo applications available in Energia, this would be too easy; most of the Energia libraries are in C++, we would be skipping all the low level C, which was the focus of this course)
+* have fun with electronics!
 
-Unter den Files befindet sich außerdem ein Demo Video(demo.mp4)
+### Hardware & IDE
+* TI TM4C1294NCPDT 
+* TI Educational Booster Pack MKII
+* TI Code Composer Studio
+
+### Progress
+I was not able to find a library that worked for the combination of these 2 boards.
+After further research I found this github repository:
+https://github.com/LePoloni/Texas-LaunchPad-and-BoosterPack-MK-II
+
+During the process I also tried some Energia Demo programs and rewrote some of the C++ Energia code into C.
+
+https://energia.nu/guide/tutorials/boosterpacks/tutorial_edumkii/
+
+By learning from these 2 sources and adapting some of their code + several hours of troubleshooting(wrong clock speed, code not matching up with the pins being used, ... ) I was able to utilize the screen and even add a couple of extra features.
+
+I would like to thank the authors of the beforementioned sources, since their work helped me learn and finish my project.
+Since I wanted to get a working projects as soon as possible the code is not very optimized and ended up in a single main.c. 
+
+### User Manual
+* after starting the program you should be seeing a mandelbulb fractal
+* with the joystick you can navigate into each direction, zoom in and out with the 2 buttons
+* by pressing both buttons you can switch into "langtons ant mode"
