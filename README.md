@@ -7,7 +7,7 @@ It was our final assigment during our embedded systems course to program an appl
 
 The basic conditions given by our lecturer were simple:
 * make use of/implement several modules(buttons, LEDs, buzzer, ...)
-* DONT use Energia (since there are already a bunch of demo applications available in Energia, this would be too easy; most of the Energia libraries are in C++, we would be skipping all the low level C, which was the focus of this course)
+* DONT use Energia (since there are already a bunch of demo applications available in Energia, this would be too easy; most of the Energia libraries are in C++, we would be skipping all the low level C)
 * have fun with electronics!
 
 ### Hardware & IDE
