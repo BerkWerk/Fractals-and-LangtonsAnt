@@ -1,38 +1,37 @@
 /*
 
     Titel: Embedded Systems Projekt - Visualization of Algorithms on TM4C1294NCPDT Display
-    Author: Berk SALMAN
 
     Inhalt:
-
-    Ein großer Bestandteil dieses Projekts wurde aus anderen Libraries zusammengefasst und
-    speziell für das  TM4C1294NCPDT Board mit Educational Booster Pack MKII umgeschrieben.
+    
+    Ein groÃŸer Bestandteil dieses Projekts wurde aus anderen Libraries zusammengefasst und
+    speziell fÃ¼r das  TM4C1294NCPDT Board mit Educational Booster Pack MKII umgeschrieben.
 
     Vieles wurde aus den Energia Libraries aus den Texas Instruments Beispiel Code, unter
-    anderem für das TM4C1294NCPDT Board/ für den Educational Booster Pack MKII entnommen.
-    Dabei wurden alle für die Ansteuerung des Displays notwendigen Libraries genau durchgelesen
-    und hier zusammengefasst. Energia verwendet eine Mischung aus größtenteils C++/C und
-    Arduino spezifische Funktionen, welche zum Teil relativ umständlich zu rekonstruieren sind.
+    anderem fÃ¼r das TM4C1294NCPDT Board/ fÃ¼r den Educational Booster Pack MKII entnommen.
+    Dabei wurden alle fÃ¼r die Ansteuerung des Displays notwendigen Libraries genau durchgelesen
+    und hier zusammengefasst. Energia verwendet eine Mischung aus grÃ¶ÃŸtenteils C++/C und
+    Arduino spezifische Funktionen, welche zum Teil relativ umstÃ¤ndlich zu rekonstruieren sind.
 
-    Dieses Projekt verwendet ausschließlich C, alle fehlenden Arduino Funktionen wurden
-    durch eigene Lösungen substituiert. Alle redundanten Definitionen unter anderem für
+    Dieses Projekt verwendet ausschlieÃŸlich C, alle fehlenden Arduino Funktionen wurden
+    durch eigene LÃ¶sungen substituiert. Alle redundanten Definitionen unter anderem fÃ¼r
     andere Boards wurden ignoriert.
 
-    Da die Implementation von Schrift/Zeichen in Energia zu komplex schien wurde hierfür
+    Da die Implementation von Schrift/Zeichen in Energia zu komplex schien wurde hierfÃ¼r
     einer andere Library verwendet. Anfangs gab es Probleme die Schrift zu orientieren
-    (gespiegelt/verkehrt), dieses Problem wurde behoben durch zusätzliche Cases in der Funktion
+    (gespiegelt/verkehrt), dieses Problem wurde behoben durch zusÃ¤tzliche Cases in der Funktion
     'setOrientation'.
     Quelle: https://github.com/LePoloni/Texas-LaunchPad-and-BoosterPack-MK-II/tree/master/AulaMOC32
 
     Ziel des Projekts war es mit verschiedenen Algorithmen/Funktionen Grafiken auf dem
-    Display zu erzeugen und dabei möglichst viele andere Interaktionsmöglichkeiten
+    Display zu erzeugen und dabei mÃ¶glichst viele andere InteraktionsmÃ¶glichkeiten
     zu implementieren.
 
     Anleitung:
 
     Das fertige Projekt umfasst nun einen Mandelbrot und einen Langtons Ant Modus.
     Man kann zwischen den beiden Modi wechseln indem man beide Buttons auf dem
-    Booster Pack gleichzeitig gedrückt hält.
+    Booster Pack gleichzeitig gedrÃ¼ckt hÃ¤lt.
 
     Mit dem auf dem Joystick auf dem Booster Pack kann man im Mandelbrot Modus
     navigieren. Mit den Buttons kann man rein und raus zoomen.
@@ -272,7 +271,7 @@ const uint16_t darkGrayColour = 0b0011100111100111;
 
 
 
-// array an farbwerten für das mandelbrot set mithilfe einer modulo funktion wird hierbei der farbwert bestimmt
+// array an farbwerten fÃ¼r das mandelbrot set mithilfe einer modulo funktion wird hierbei der farbwert bestimmt
 // color= i%70;
 const uint16_t colours[] = {
 0x0000,//#define LCD_Black
@@ -801,7 +800,7 @@ uint8_t highByte(uint16_t w){
 void delayms(uint32_t n){
 
     ROM_SysCtlDelay(n*40000);    //5333@16000000  //400000@120MHZ(120000000)
-    //16mhz processor  1cycle =  1second/16 000 000 = 0, 000 000 187 5 (1x3cycles); nanoseconds  1 000 000 000 (second/nanosecond) / 1 cycle  = 5 333 333  1S (5 333ms)
+    //16mhz processor  1cycle =  1second/16 000 000 = 0, 000 000 187 5 (1x3cycles); nanoseconds  1 000 000 000 (second/nanosecond) / 1 cycle  = 5 333 333  1S (5Â 333ms)
 
 }
 
@@ -1357,8 +1356,8 @@ void langtonsAnt(){
     Squares on a plane are colored variously either black or white. We arbitrarily identify one square as the "ant".
     The ant can travel in any of the four cardinal directions at each step it takes. The "ant" moves according to the rules below:
 
-    At a white square, turn 90° clockwise, flip the color of the square, move forward one unit
-    At a black square, turn 90° counter-clockwise, flip the color of the square, move forward one unit
+    At a white square, turn 90Â° clockwise, flip the color of the square, move forward one unit
+    At a black square, turn 90Â° counter-clockwise, flip the color of the square, move forward one unit
 
     Source: https://en.wikipedia.org/wiki/Langton's_ant
 */
@@ -1421,8 +1420,8 @@ void langtonsAnt(){
 
                 break;
         }
-//        At a white square, turn 90° clockwise, flip the color of the square, move forward one unit
-//        At a black square, turn 90° counter-clockwise, flip the color of the square, move forward one unit
+//        At a white square, turn 90Â° clockwise, flip the color of the square, move forward one unit
+//        At a black square, turn 90Â° counter-clockwise, flip the color of the square, move forward one unit
         if(_map[0][posx][posy]==1){
             direction--;
             antMove(posx,posy, whiteColour);
@@ -1483,7 +1482,7 @@ void mandelbrot(uint16_t widthArg,
 
     int maxi = 99;      // color generation?
 
-    //x und y Koordinate im imaginären Bild, specs above affect x and y values bellow
+    //x und y Koordinate im imaginÃ¤ren Bild, specs above affect x and y values bellow
     float x;
     float y;
 
@@ -1492,7 +1491,7 @@ void mandelbrot(uint16_t widthArg,
     uint16_t iteratorY = 0;
 
 
-    //Skaliere für jeden Punkt der Computergrafik den dazu gehörigen Punkt der imaginären Grafik
+    //Skaliere fÃ¼r jeden Punkt der Computergrafik den dazu gehÃ¶rigen Punkt der imaginÃ¤ren Grafik
     for (iteratorY=0; iteratorY<128; iteratorY++) {
 
         x = (x0 + (x1 - x0) / ((float)80)*(float)iteratorY);
