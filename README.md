@@ -17,7 +17,8 @@ The basic conditions given by our lecturer were simple:
 
 ### Progress
 I was not able to find a library that worked for the combination of these 2 boards.
-After further research I found this github repository:
+After further research I managed to find this repository on github:
+
 https://github.com/LePoloni/Texas-LaunchPad-and-BoosterPack-MK-II
 
 During the process I also tried some Energia Demo programs and rewrote some of the C++ Energia code into C.
