@@ -17,15 +17,19 @@ The basic conditions given by our lecturer were simple:
 
 ### Progress
 I was not able to find a library that worked for the combination of these 2 boards.
-After further research I managed to find this repository on github:
+After further research I managed to find this repository on github(which I couldnt get working on these boards)
 
 https://github.com/LePoloni/Texas-LaunchPad-and-BoosterPack-MK-II
 
 During the process I also tried some Energia Demo programs and rewrote some of the C++ Energia code into C.
+(All the Energia Demo programs worked flawless but most of the code was in C++)
 
 https://energia.nu/guide/tutorials/boosterpacks/tutorial_edumkii/
 
-By learning from these 2 sources and adapting some of their code + several hours of troubleshooting(wrong clock speed, code not matching up with the pins being used, ... ) I was able to utilize the screen and even add a couple of extra features.
+Additionally I used some example code from the TI documentation.
+
+By learning from these sources and adapting some of the code into my project I was able to utilize the screen.
+Nonetheless it took me several hours of troubleshooting(wrong clock speed, code not matching up with the pins being used, ... ) and many failed attempts. It was quite tricky to translate some of the Energia C++ functions into C.
 
 I would like to thank the authors of the beforementioned sources, since their work helped me learn and finish my project.
 Since I wanted to get a working projects as soon as possible the code is not very optimized and ended up in a single main.c. 
