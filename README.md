@@ -1,6 +1,8 @@
 # Embedded Systems Project
 ## Fractals and Langtons Ant
 
+<img src="https://github.com/if18b189/Fractals-and-LangtonsAnt/blob/master/demo/langtons%20ant.jpg" width="500" />
+
 ### Introduction
 
 It was our final assigment during our embedded systems course to program an application which utilizes several input/output modules of the Texas Instruments TM4C1294NCPDT board in combination with the TI Educational Booster Pack MKII.
@@ -54,10 +56,11 @@ At this point I was able to write data successfully.
 
 <img src="https://github.com/if18b189/Fractals-and-LangtonsAnt/blob/master/demo/langtons%20ant.jpg" width="500" />
 
-A bit later I implemented Langtons Ant, I copied the code from an old coding assigment.
+A bit later I implemented Langtons Ant, I copied the code from an older coding assigment.
 
 ![fractal demo gif](https://github.com/if18b189/Fractals-and-LangtonsAnt/blob/master/demo/demo_gif1.gif)
 
+(all gifs should be x2 the actual speed)
 Demo of the Fractal mode
 
 ![ant demo gif](https://github.com/if18b189/Fractals-and-LangtonsAnt/blob/master/demo/demo_gif2.gif)
