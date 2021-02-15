@@ -10,7 +10,7 @@
 It was our final assigment during our embedded systems course to program an application which utilizes several input/output modules of the Texas Instruments TM4C1294NCPDT board in combination with the TI Educational Booster Pack MKII.
 
 The basic conditions given by our lecturer:
-* make use of/implement several modules(buttons, LEDs, buzzer, ...)
+* make use of/implement several components(buttons, LEDs, buzzer, ...)
 * DONT use Energia (since there are already a bunch of demo applications available in Energia, this would be too easy; most of the Energia libraries are in C++, we would be skipping all the low level C)
 * have fun with electronics!
 
