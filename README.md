@@ -1,7 +1,9 @@
 # Embedded Systems Project
 ## Fractals and Langtons Ant
 
-<img src="https://github.com/if18b189/Fractals-and-LangtonsAnt/blob/master/demo/langtons%20ant.jpg" width="500" />
+<p align="center">
+  <img src="https://github.com/if18b189/Fractals-and-LangtonsAnt/blob/master/demo/langtons%20ant.jpg" width="500" />
+</p>
 
 ### Introduction
 
@@ -38,7 +40,7 @@ Since I wanted to get a working projects as soon as possible the code is not ver
 
 ### Results
 
-<p float="center">
+<p align="center">
   <img src="https://github.com/if18b189/Fractals-and-LangtonsAnt/blob/master/demo/signal1.jpg" width="300" />
   <img src="https://github.com/if18b189/Fractals-and-LangtonsAnt/blob/master/demo/signal2.jpg" width="300" />
 </p>
@@ -46,28 +48,40 @@ Since I wanted to get a working projects as soon as possible the code is not ver
 Checking the documentations, trying to figure out how to make the TM4C1294NCPDT board communicate with the LCD controller through SPI.
 (Note: At this point I was mostly trying to figure out which pins are necessary and how to configure them correctly in C. The datasheet for the Himax HX8353-E LCD controller was very helpful.)
 
-<img src="https://github.com/if18b189/Fractals-and-LangtonsAnt/blob/master/demo/first%20image.jpg" width="500" />
+<p align="center">
+  <img src="https://github.com/if18b189/Fractals-and-LangtonsAnt/blob/master/demo/first%20image.jpg" width="500" />
+</p>
 
 The first progress, after many failed attempts and troubleshooting. Still unable to communicate with the display module.
 
-<img src="https://github.com/if18b189/Fractals-and-LangtonsAnt/blob/master/demo/first_drawing.jpg" width="500" />
+<p align="center">
+  <img src="https://github.com/if18b189/Fractals-and-LangtonsAnt/blob/master/demo/first_drawing.jpg" width="500" />
+</p>
 
 At this point I was able to write data successfully.
 
-<img src="https://github.com/if18b189/Fractals-and-LangtonsAnt/blob/master/demo/langtons%20ant.jpg" width="500" />
+<p align="center">
+  <img src="https://github.com/if18b189/Fractals-and-LangtonsAnt/blob/master/demo/langtons%20ant.jpg" width="500" />
+</p>
 
 A bit later I implemented Langtons Ant, I copied the code from an older coding assigment.
 
-![fractal demo gif](https://github.com/if18b189/Fractals-and-LangtonsAnt/blob/master/demo/demo_gif1.gif)
+<p align="center">
+  <img src="https://github.com/if18b189/Fractals-and-LangtonsAnt/blob/master/demo/demo_gif1.gif" />
+</p>
 
 (all gifs should be x2 the actual speed)
 Demo of the Fractal mode
 
-![ant demo gif](https://github.com/if18b189/Fractals-and-LangtonsAnt/blob/master/demo/demo_gif2.gif)
+<p align="center">
+  <img src="https://github.com/if18b189/Fractals-and-LangtonsAnt/blob/master/demo/demo_gif1.gif2" />
+</p>
 
 Demo of Langtons Ant mode
 
-![fractal demo gif2](https://github.com/if18b189/Fractals-and-LangtonsAnt/blob/master/demo/fixed_cycle.gif)
+<p align="center">
+  <img src="https://github.com/if18b189/Fractals-and-LangtonsAnt/blob/master/demo/fixed_cycle.gif" />
+</p>
 
 Playing around with the fractal paramenters
 
