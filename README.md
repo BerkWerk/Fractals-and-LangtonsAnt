@@ -74,10 +74,11 @@ A bit later I implemented Langtons Ant, I copied the code from an older coding a
 Demo of the Fractal mode
 
 <p align="center">
-  <img src="https://github.com/if18b189/Fractals-and-LangtonsAnt/blob/master/demo/demo_gif1.gif2" />
+  <img src="https://github.com/if18b189/Fractals-and-LangtonsAnt/blob/master/demo/demo_gif2.gif" />
 </p>
 
 Demo of Langtons Ant mode
+
 
 <p align="center">
   <img src="https://github.com/if18b189/Fractals-and-LangtonsAnt/blob/master/demo/fixed_cycle.gif" />
