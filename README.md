@@ -34,24 +34,25 @@ Nonetheless it took me several hours of troubleshooting to solve my beginner mis
 I would like to thank the authors of the beforementioned sources, since their work helped me learn and finish my project.
 Since I wanted to get a working projects as soon as possible the code is not very optimized and ended up in a single main.c, which is far from optimal. 
 
-### Results/Screenshots
+### Results
 
-![oscilloscope signals](https://github.com/if18b189/Fractals-and-LangtonsAnt/blob/master/demo/signal1.jpg)
+<p float="center">
+  <img src="https://github.com/if18b189/Fractals-and-LangtonsAnt/blob/master/demo/signal1.jpg" width="300" />
+  <img src="https://github.com/if18b189/Fractals-and-LangtonsAnt/blob/master/demo/signal2.jpg" width="300" />
+</p>
 
-![oscilloscope signals2](https://github.com/if18b189/Fractals-and-LangtonsAnt/blob/master/demo/signal2.jpg)
-
-Checking the documentations, trying to figure out how to make the TM4C1294NCPDT communicate with the LCD controller through SPI.
+Checking the documentations, trying to figure out how to make the TM4C1294NCPDT board communicate with the LCD controller through SPI.
 (Note: At this point I was mostly trying to figure out which pins are necessary and how to configure them correctly in C. The datasheet for the Himax HX8353-E LCD controller was very helpful.)
 
-![first image](https://github.com/if18b189/Fractals-and-LangtonsAnt/blob/master/demo/first%20image.jpg)
+<img src="https://github.com/if18b189/Fractals-and-LangtonsAnt/blob/master/demo/first%20image.jpg" width="500" />
 
 The first progress, after many failed attempts and troubleshooting. Still unable to communicate with the display module.
 
-![first drawing](https://github.com/if18b189/Fractals-and-LangtonsAnt/blob/master/demo/first_drawing.jpg)
+<img src="https://github.com/if18b189/Fractals-and-LangtonsAnt/blob/master/demo/first_drawing.jpg" width="500" />
 
 At this point I was able to write data successfully.
 
-![langtons ant](https://github.com/if18b189/Fractals-and-LangtonsAnt/blob/master/demo/first_drawing.jpg)
+<img src="https://github.com/if18b189/Fractals-and-LangtonsAnt/blob/master/demo/langtons%20ant.jpg" width="500" />
 
 A bit later I implemented Langtons Ant, I copied the code from an old coding assigment.
 
